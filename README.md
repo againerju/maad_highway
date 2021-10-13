@@ -3,7 +3,7 @@ This is the official project page including the paper, code, simulation, baselin
 
 CODE WILL BE RELEASED SOON.
 
-**[Traffic Control Gesture Recognition for Autonomous Vehicles](https://openreview.net/forum?id=tmZsuYPmQ9m)**
+**[Anomaly Detection in Multi-Agent Trajectories for Automated Driving](https://openreview.net/forum?id=tmZsuYPmQ9m)**
 <br>
 Julian Wiederer, Arij Bouazizi, Marco Troina, Ulrich Kressel, Vasileios Belagiannis
 <br>
