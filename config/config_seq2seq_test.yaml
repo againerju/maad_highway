@@ -1,0 +1,3 @@
+run_name: "seq2seq_corl21"
+checkpoint: "epoch_500.pth"
+test_set: "test"  # define set: test, test_ablation_beyond_pairs, train

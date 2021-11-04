@@ -1,0 +1,5 @@
+run_name: "stgae_bivariate_loss_corl21"
+
+# testing data
+feature_encoder_directory: "tbd"
+latent_feature_directory: "tbd"

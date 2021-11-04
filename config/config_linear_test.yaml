@@ -1,0 +1,7 @@
+dataset:
+  name: "maad"
+  set: "test"
+
+model:
+  type: "cvm"  # linear model, cvm or lti
+  obs_len: 15  # observation length

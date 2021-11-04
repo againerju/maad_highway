@@ -1,0 +1,13 @@
+# one-class method
+method: "kde"  # define one-class method: kde, ocsvm
+
+# training features
+feature_encoder_directory: "stgae_bivariate_loss_corl21"
+latent_feature_directory: "tbd"
+
+# KDE
+kde_bandwidth: 0.04419  # ~ 2**-4.5
+
+# OC-SVM
+ocsvm_gamma: 0.5
+ocsvm_nu: 0.1

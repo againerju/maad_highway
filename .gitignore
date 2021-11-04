@@ -1,0 +1,8 @@
+datasets/*
+experiments/*
+recordings/*
+.idea
+!datasets/.gitignore
+!experiments/.gitignore
+!recordings/.gitignore
+*.pyc

@@ -1,0 +1,12 @@
+dataset:
+  name: "maad"
+  set: "train"
+model:
+  obs_len: 15  # observation length
+  hidden_dim: 15  # dimension of hidden layer
+  n_layers: 3  # number of LSTM layers
+optimiser:
+  lr: 0.001  # initial learning rate
+train:
+  num_epochs: 500  # default: 500
+  batch_size: 128  # loss update for batch_size segments
