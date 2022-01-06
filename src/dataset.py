@@ -170,7 +170,7 @@ class MAADDataset(Dataset):
             self.seq_ids[start:end, :],  # [BxNx1]
             self.labels[start:end, :],  # [BxNx2xT]
             self.v_obs[index],  # [BxTxNxF]
-            self.A_obs[index]  # [BxTxNxF]
+            self.A_obs[index]  # [BxTxNxN]
         ]
 
         # B: batch size
