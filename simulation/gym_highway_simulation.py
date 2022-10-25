@@ -127,16 +127,16 @@ class MultiCarCountryRoad(gym.Env):
         normal_labels = ["side-by-side", "overtake left", "multi-overtake",
                          "following", "opposite drive", "else"]
         anomaly_labels = ["aggressive overtaking",
-                          "aggressive reeving",
                           "pushing aside",
-                          "spreading maneuver to right",
-                          "spreading maneuver to left",
+                          "right spreading",
+                          "left spreading",
                           "tailgating",
                           "thwarting",
-                          "getting of the road",
-                          "staggering maneuver",
+                          "leave road",
+                          "staggering",
                           "skidding",
                           "wrong-way driving",
+                          "aggressive reeving",
                           "else"]
         self.labels = {"normal": {n: k for n, k in enumerate(normal_labels)},
                        "abnormal": {n: k for n, k in enumerate(anomaly_labels)}}
