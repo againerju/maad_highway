@@ -71,6 +71,58 @@ chmod +x download_dataset.sh
  /></a><br />MAAD Highway dataset is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"
  >Creative Commons Attribution-NonCommercial 4.0 International License</a>.
 
+##### Dataset Definition
+As soon as you have received the download link, downlaod the .zip file and unpack into /datasets/maad. This results in the following structure:
+
+```
+datasets/maad
+│   
+└───test
+│   │   abnormal_00000x.txt
+│   │   ...
+|   |   normal_00000x.txt
+|   |   ...
+│
+└───test_ablation_beyond_pairs
+│   │   abnormal_00000x.txt
+│   │   ...
+│   │   normal_00000x.txt
+|   |   ...
+│
+└───train
+│   │   normal_00000x.txt
+|   |   ...
+```
+
+Each .txt represents one scene and is described by the columns {frame-id, timestamp, agent-id, x, y, major-label, minor-label}. The x- and y-coordinates are provided in the global scene coordinate system, i.e. the same for all sequences. 
+
+##### Label Definition
+As stated in the paper, we provide major and minor labels. Major label mapping is defined as:
+
+```
+0   =   normal
+1   =   abnormal
+2   =   ignore
+```
+
+The minor label definition describes the driving maneuvers and is defined as:
+
+```
+-1  =   void
+0   =   aggressive overtaking
+1   =   pushing aside
+2   =   right spreading
+3   =   left spreading
+4   =   tailgating
+5   =   thwarting
+6   =   leave road
+7   =   staggering
+8   =   skidding
+9   =   wrong-way driving
+10  =   aggressive reeving
+11  =   else
+```
+
 ##### Data Loader
 We provide a data loader for the MAAD Highway dataset in `/scripts/dataset.py`.
 
