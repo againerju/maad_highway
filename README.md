@@ -56,12 +56,11 @@ with subject matter '[CoRL2021] MAAD Highway Dataset - Access Request' stating t
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *With this e-mail I agree that I will use the MAAD Highway dataset 
 following the Creative Common Attribution-NonCommercial 4.0 International License.*
 
-We will promptly reply with a download link. Enter the download link into `/scripts/download_dataset.sh` 
-and the run commands
+We will promptly reply with a download link. Download the .zip file and copy it in the `datasets`directory. Unzip using
 
 ```
-chmod +x download_dataset.sh
-./download_dataset.sh
+cd datasets
+unzip corl21_maad_v_1_0.zip
 ```
 
 ##### License
